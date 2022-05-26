@@ -60,10 +60,10 @@ async function postByIdMethod(id){
     console.log(response)
     return response;
 }
-// async function PostsMethod(){
-//     const response= await axios.get(`${baseAddress}posts`);
-//     console.log(response)
-// }
+async function PostsMethod(){
+    const response= await axios.get(`${baseAddress}posts`);
+    console.log(response)
+}
 
 
 app.listen(8080,()=>{
