@@ -40,13 +40,7 @@ app.get('/getPost/:id', async (req,res)=>{
         res.send(response.data);
     }
 })
-// app.get('/allPosts', async (req,res)=>{
-//     const response=authentication(req,res);
-//     if(response.statusCode===200){
-//         await allPostsMethod()
-//         res.send("Authorized");
-//     }
-// })
+
 
 
 // Methods used by endPoints
@@ -60,10 +54,7 @@ async function postByIdMethod(id){
     console.log(response)
     return response;
 }
-async function PostsMethod(){
-    const response= await axios.get(`${baseAddress}posts`);
-    console.log(response)
-}
+
 
 
 app.listen(8080,()=>{
